@@ -7,9 +7,8 @@ export default defineConfig({
     port: 5173,
     proxy: {
       "/api": {
-        target: "https://hyra-accessories.onrender.com",
+        target: "http://localhost:5000",
         changeOrigin: true,
-        secure: true,
       },
     },
   },
